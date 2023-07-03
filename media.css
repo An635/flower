@@ -1,0 +1,67 @@
+@media (max-width: 993px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width: 780px){
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        right:0;
+        left: 0;
+        top: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        background: #fff;
+        margin: 1.5rem;
+        padding: 2rem 3rem;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+    
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 297px){
+   html{
+        font-size: 40%;
+   }
+   .home {
+        min-height: 90%;
+   }
+}
